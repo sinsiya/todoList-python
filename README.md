@@ -95,6 +95,7 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 | GET    | `/api/v1/todo/details/<id>/`     | Retrieve a specific item |
 | PUT    | `/api/v1/todo/details/<id>/`     | Update an existing item  |
 | DELETE | `/api/v1/todo/details/<id>/`     | Delete a specific item   |
+---
 
 ## 🌐 API Usage Examples
 
