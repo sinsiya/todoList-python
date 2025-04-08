@@ -1,6 +1,7 @@
 # 📝 Django To-Do List API
 
-A simple and RESTful API built with **Django** and **Django REST Framework** for managing To-Do tasks. This project provides CRUD functionality to create, retrieve, update, and delete to-do items.
+A simple and RESTful API built with **Django** and **Django REST Framework** for managing To-Do List. This project was developed as part of a machine test for Aifer Education Pvt Ltd.
+
 
 ---
 
@@ -23,32 +24,33 @@ A simple and RESTful API built with **Django** and **Django REST Framework** for
 
 ## 🛠️ Project Structure
 
-todolist/ ├── api/ │ └── v1/ │ └── todo_list/ │ ├── serializers.py │ ├── urls.py │ ├── views.py ├── media/ ├── static/ ├── todo_list/ │ ├── settings.py │ ├── urls.py │ ├── asgi.py │ ├── wsgi.py ├── todoList/ │ ├── migrations/ │ ├── admin.py │ ├── apps.py │ ├── models.py │ ├── tests.py │ ├── views.py ├── manage.py ├── README.md └── requirements.txt
+<pre>todolist/
+├── api/
+│   └── v1/
+│       └── todo_list/
+│           ├── serializers.py       # Handles data serialization/deserialization
+│           ├── urls.py              # API routing
+│           └── views.py             # API view logic
+├── media/                           # Media file storage
+├── static/                          # Static files (CSS, JS, etc.)
+├── todo_list/                       # Project configuration
+│   ├── asgi.py
+│   ├── settings.py                  # Django project settings
+│   ├── urls.py                      # Root URL configuration
+│   └── wsgi.py
+├── todoList/                        # Main application for to-do logic
+│   ├── admin.py                     # Admin panel integration
+│   ├── apps.py                      # App configuration
+│   ├── migrations/                  # Database migration files
+│   ├── models.py                    # Database models
+│   ├── tests.py                     # Unit tests
+│   └── views.py                     # Web views (if any)
+├── manage.py                        # Django CLI utility
+├── README.md                        # Project documentation
+└── requirements.txt                 # Project dependencies
+</pre>
 
----
 
-# 📝 Django To-Do List API
-
-A simple and RESTful API built with **Django** and **Django REST Framework** for managing To-Do tasks. This project provides CRUD functionality to create, retrieve, update, and delete to-do items.
-
----
-
-## 🚀 Features
-
-- ✅ Create, view, update, and delete to-do items
-- 🕒 Automatically tracks creation time
-- 📦 Clean and consistent API responses
-- ⚙️ Built using class-based API views (`APIView`)
-
----
-
-## 📦 Requirements
-
-- Python 3.8+
-- Django 4.2
-- Django REST Framework
-
----
 
 ## 📖 Setup Instructions
 
@@ -102,10 +104,11 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 **Request Body:**
 ```json
 {
-  "title": "Build Django To-Do API",
-  "description": "Implement CRUD operations",
+  "title": "Complete Machine Test",
+  "description": "Build the To-Do List API for Aifer Education Pvt Ltd",
   "completed": false
 }
+
 ```
 **Sample Response**:
 ```json
@@ -114,8 +117,8 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "title": "To-Do Created",
   "data": {
     "id": 1,
-    "title": "Build Django To-Do API",
-    "description": "Implement CRUD operations",
+    "title": "Complete Machine Test",
+    "description": "Build the To-Do List API for Aifer Education Pvt Ltd",
     "completed": false,
     "created_at": "2025-04-08T10:30:00Z"
   },
@@ -136,8 +139,8 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "data": [
     {
       "id": 1,
-      "title": "Build Django To-Do API",
-      "description": "Implement CRUD operations",
+      "title": "Complete Machine Test",
+      "description": "Build the To-Do List API for Aifer Education Pvt Ltd",
       "completed": false,
       "created_at": "2025-04-08T10:30:00Z"
     }
@@ -145,6 +148,7 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "errors": "",
   "message": "To-Do items received successfully."
 }
+
 ```
 ### 🧾 Retrieve a Single To-Do (GET)
 
@@ -159,14 +163,15 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "title": "Item Retrieved",
   "data": {
     "id": 1,
-    "title": "Build Django To-Do API",
-    "description": "Implement CRUD operations",
+    "title": "Complete Machine Test",
+    "description": "Build the To-Do List API for Aifer Education Pvt Ltd",
     "completed": false,
     "created_at": "2025-04-08T10:30:00Z"
   },
   "errors": "",
   "message": "To-Do item fetched successfully."
 }
+
 ```
 ### ✏️ Update a To-Do (PUT)
 
@@ -177,8 +182,8 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 **Request Body:**
 ```json
 {
-  "title": "Build To-Do API with Django",
-  "description": "Support all CRUD operations",
+  "title": "Complete Machine Test - Updated",
+  "description": "Update the To-Do List API for Aifer Education Pvt Ltd",
   "completed": true
 }
 ```
@@ -189,14 +194,15 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "title": "Item Updated",
   "data": {
     "id": 1,
-    "title": "Build To-Do API with Django",
-    "description": "Support all CRUD operations",
+    "title": "Complete Machine Test - Updated",
+    "description": "Update the To-Do List API for Aifer Education Pvt Ltd",
     "completed": true,
     "created_at": "2025-04-08T10:30:00Z"
   },
   "errors": "",
   "message": "To-Do item updated successfully."
 }
+
 ```
 ### 🗑️ Delete a To-Do (DELETE)
 
