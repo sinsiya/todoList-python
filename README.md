@@ -104,7 +104,7 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 {
   "title": "Build Django To-Do API",
   "description": "Implement CRUD operations",
-  "completed": true
+  "completed": false
 }
 ```
 **Sample Response**:
